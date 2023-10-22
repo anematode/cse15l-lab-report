@@ -7,11 +7,11 @@
 1. Example with no arguments (valid):
 
     ```
-    cowpox@Cowpox:~/Documents$ cd
+    cowpox@Cowpox:~/Desktop/screenshots$ cd
     cowpox@Cowpox:~$
     ```
 
-    The starting working directory was */home/cowpox/Documents*, in the user cowpox. When `cd` is given no arguments, the working directory is set to be the directory one level higher, or */home/cowpox*, also known as *~*. In other words, `cd` is equivalent to `cd ..` .
+    The starting working directory was */home/cowpox/Desktop/screenshots*, in the user cowpox. When `cd` is given no arguments, the working directory is set to be the user home directory, or */home/cowpox*, also known as *~*. In other words, `cd` is equivalent to `cd ~` .
 
 2. Example with a single directory as an argument (valid):
 
@@ -20,7 +20,7 @@
     cowpox@Cowpox:/sbin$ 
     ```
 
-    When `cd` gets a single directory as its argument, it enters that directory. In this case, I passed it an absolute path to `sbin`, which contains Linux system binaries. The working directory was moved from `/home/cowpox` to `/sbin`.
+    The starting directory here is `/sbin`. When `cd` gets a single directory as its argument, it enters that directory. In this case, I passed it an absolute path to `sbin`, which contains Linux system binaries. The working directory was moved from `/home/cowpox` to `/sbin`.
 
 3. Example when passing a file (invalid):
 
@@ -43,7 +43,7 @@
     cowpox@Cowpox:/usr/local/bin$
     ```
 
-    `ls` prints a list of the files and directorys of the working directory. Although it can't be shown here, on my system, the directorys are blue and the files are green.
+    The working directory here is `/usr/local/bin`. `ls` prints a list of the files and directories of the working directory. Although it can't be shown here, on my system, the directories are blue and the files are green. 
 
 2. Example when passing a directory (valid):
 
@@ -54,7 +54,7 @@
     cowpox@Cowpox:/usr/local/bin$
     ```
 
-    Here,`ls` prints the contents of the passed directory, which is relative to the working directory. `intel-sde` contains some files associated with Intel's emulator for its various microarchitectures. The working directory is not changed.
+    The working directory is not changed from its initial value of `/usr/local/bin`. Here,`ls` prints the contents of the passed directory, which is relative to the working directory. `intel-sde` contains some files associated with Intel's emulator for its various microarchitectures. 
 
 3. Example when passing a file (valid):
 
