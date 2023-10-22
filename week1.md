@@ -30,7 +30,7 @@
     cowpox@Cowpox:/sbin$ 
     ```
 
-    It does not make sense to set the working directory to a file, so `cd` returns an error code and does not change the directory.
+    It does not make sense to set the working directory to a file, so `cd` returns an error code and does not change the directory, which stays at `/sbin`.
 
 ## ls
 
