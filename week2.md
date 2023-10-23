@@ -72,3 +72,7 @@ Here is a screenshot of me logging in with my generated SSH key, stored in `~/.s
 And here is a screenshot of the locations of the keys.
 
 ![a](./hello-4.png)
+
+## Part 3
+
+One new thing I learned is that you can use Visual Studio Code on macOS!
