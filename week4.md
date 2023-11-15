@@ -73,7 +73,7 @@ OK (4 tests)
 
 ## Part 2
 
-I choose `grep`.
+I chose `grep`.
 
 One particularly useful feature is the A, B, and C flags, which take in a numeric value and output lines below, above, and surrounding a match, respectively. The number of adjacent lines displayed is given by the passed numeric value.
 
@@ -184,3 +184,5 @@ $ grep -E "m{2}" /usr/share/dict/words --count
 ```
 
 matches in the whole file, and so if we only want a few we can terminate things early.
+
+All this information was taken from the man page for grep (which can be read from any Unix terminal using `man grep`). I learned about the existence of `/usr/share/dict/words` from a friend some years ago.
