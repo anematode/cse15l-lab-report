@@ -49,7 +49,7 @@ I tried replacing `expected` with `expected2` for the second test. It still does
 
 The updated snippet of code:
 
-```
+```java
 		ArrayList<Integer> range2 = Addition.range(50000, 50004);
 		List<Integer> expected2 = Arrays.asList(new Integer[]{50000, 50001, 50002, 50003});
 
@@ -101,7 +101,7 @@ java -ea Addition
 
 Addition.java:
 
-```
+```java
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
