@@ -38,10 +38,10 @@ In this case, I ran the `javac` and `java` commands from above to compile and ru
 
 ## Step 9
 
-`vim .gitignore<enter>i*.class<esc>:wq<enter>git add --a<enter>git commit -m "lol"<enter>git push<enter><my credentials><enter>
+```
+vim .gitignore<enter>i*.class<esc>:wq<enter>git add --a<enter>git commit -m "lol"<enter>git push<enter><my credentials><enter>
+```
 
 Here, I added .class files to the .gitignore file, then committed my changes and pushed.
-
-![a](f6.png)
 
 ![a](f6.png)
