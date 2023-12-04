@@ -136,6 +136,19 @@ public class Addition {
 }
 ```
 
+The directory structure is just Addition.java and test.sh in a folder.
+
+You can run `bash test.sh` to trigger the bug.
+
+Although the student and TA understandably didn't realize it, the bug is quirky behavior of Java's Integer. Small Integer values are cached and so compare equal as objects, while large Integer values are not cached, and so compare unequal as objects.
+
+There are a couple ways to fix the bug. One is to force the Integer result of `range2.get(i)` and `expected.get(i)` to become an `int`. Another is to use the `.equals` method to compare the integers:
+
+```java
+assert range2.get(i).equals(expected.get(i));
+```
+
+(This is one of my favorite Java quirks, because it bit me a long time ago. I genuinely think it should be a compile error to try to compare Integer values directly!)
 
 ## Part 2
 
